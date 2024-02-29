@@ -1,0 +1,121 @@
+    *{ margin: 0;
+    box-sizing:border-box;
+    }
+
+    .yo{
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 9px rgba(1, 1, 1, 2.1);
+    }
+    
+    body{  font-family:Arial,Helvetica, sans-serif;
+     padding:90px 20px 0;
+    }
+    .header{ background-color: aquamarine;
+    height: 80px;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    }
+    .nav{ display:flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    }
+    .navml{ color: white; 
+     text-decoration: none;
+    }
+    .logo{ font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    }
+    .nav-menu{
+         display:flex;
+         margin-right: 40px;
+         list-style: none;
+        }
+          .nmi{  
+    font-size:18px;
+    margin-right: 0 10px;
+    line-height:80px;
+    text-transform: uppercase;
+    width:max-content;
+    }
+    .nml{
+    padding: 8px 12px;
+    border-radius: 5px;
+    }
+    .nml:hover{  background-color:bisque;
+        transition: 1;
+    }
+    .toggle{
+        color:white;
+        background-color: blue;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60;
+        cursor:progress;
+        display:none;
+    }
+    .btn{
+        background-color:dodgerblue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    @media(max-width: 768px){
+        body{
+            background-color:cyan;
+            padding-top: 70px;
+        }
+    }
+    .header{
+        height: 60px;
+    }
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menu{
+        flex-direction: line;
+        margin-right: 20px;
+        background-color:cadetblue;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100%-60px);
+        overflow: auto;
+    }
+    .nmi{
+        line-height: 70px;
+    }
+    .nml:hover{
+        background: none;
+        color: deepskyblue;
+    }
+    .toggle{
+        color:white;
+        background-color: blue;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        cursor: progress;
+        display: none;
+    }
+    .btn{
+        background-color: dodgerblue;
+        border: none;
+        color:white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
